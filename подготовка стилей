@@ -1,0 +1,26 @@
+ФАЙЛ normalize - обязательно подсоединяем первым!!!!!
+
+в файле style пишем следующие вещи
+
+* {
+    box-sizing: border-box;/* для всех элементов паддинги будут браться за счет внутреннего, а не внешнего пространства элемента*/
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+
+img {
+    max-width: 100%; /*что бы картинки не были больше родителя*/
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
