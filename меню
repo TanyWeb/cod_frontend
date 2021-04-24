@@ -1,0 +1,49 @@
+//ГОРИЗОНТАЛЬНОЕ МЕНЮ НА ВСЮ ШИРИНУ С ВЫПАДАЮЩИМИ СПИСКАМИ//
+.headernav {
+        position: relative;
+		z-index: 100;
+        background-color: var(--color-white);
+    &-list {
+        padding: vw(30);
+        justify-content: space-between;
+        box-shadow: var(--shodow-main);
+    }
+
+    &-list-item {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &-list-item:nth-child(-n+2) {
+        padding-right: 11px;
+        color: var(--color-red);
+        background-image: url(../img/arrow1.svg);
+        background-repeat: no-repeat;
+        background-position: top 5px right;
+    }
+    &-submenu {
+        position: absolute;
+        z-index: 150;
+        padding: 20px 20px;
+        width: vw(250);
+        background-color: #ffffff;
+        visibility: hidden;
+        opacity: 0; 
+        transform-origin: 0% 0%;
+        transform: rotateX(-90deg);
+        transition: .3s linear; 
+        
+        li {
+            margin-bottom: vw(15);
+            color: var(--color-gray);
+        }
+    }
+    
+}
+
+ li:hover >.headernav-submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+    }
+    
