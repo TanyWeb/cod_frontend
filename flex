@@ -4,7 +4,7 @@
     flex-grow: 1;
 }
 
-.flatteringLine:nth-child(4n) {
+.flatteringLine :nth-child(4n) {
       margin-right: 0;
 }
 
