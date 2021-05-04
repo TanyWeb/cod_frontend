@@ -1,2 +1,8 @@
 ПЕРВЫЕ 2 ЭЛЕМЕНТА СПИСКА
 nth-child(-n+2)
+
+
+\\ВСЕ КРОМЕ ПОСЛЕДНЕГО ЭЛЕМЕНТА
+&-nav-list-item:not(:last-child) {
+        margin-right: vw(30);
+    }
